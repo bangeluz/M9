@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:300,500");
+@import url(fonts.css);
+@import url(normalize.min.css);
+@import url(animate.min.css);
+@import url(bootstrap.css);
+* {
+  font-size: 16px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  line-height: 1rem; }
+
+[class^="fondo"] {
+  -webkit-transform: .3s;
+  -ms-transform: .3s;
+  transform: .3s; }
+
+body {
+  overflow-x: hidden; }
+
+h1, h2 {
+  font-family: "Fjalla One", "Helvetica", sans-serif !important;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  text-transform: uppercase;
+  color: #0067F1;
+  font-size: 1rem; }
+
+.text-black {
+  color: #111; }
+
+header {
+  width: 100%; }
+  header .fondo {
+    position: relative; }
+    header .fondo::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1000px;
+      background: #0067F1;
+      -webkit-transform: skewX(80deg);
+      -ms-transform: skewX(80deg);
+      transform: skewX(80deg); }
+    header .fondo::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      background: #0067F1; }
+    header .fondo .container {
+      z-index: 2; }
+      header .fondo .container [class^=col-] {
+        cursor: context-menu; }
+        header .fondo .container [class^=col-]:hover img {
+          border-color: #282C34;
+          -webkit-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+          background: #282C34; }
+        header .fondo .container [class^=col-]:hover .justo span {
+          color: #0067F1; }
+        header .fondo .container [class^=col-] img {
+          border: 4px solid #F2F8FF;
+          border-radius: 2px;
+          transition: .2s;
+          margin-bottom: .5rem; }
+        header .fondo .container [class^=col-] .justo {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          max-width: 330px;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin: 0 auto; }
+          header .fondo .container [class^=col-] .justo p {
+            font-size: 0.8rem;
+            color: #111;
+            padding: 10px 15px 0 15px;
+            text-align: left; }
+            header .fondo .container [class^=col-] .justo p b {
+              font-size: 0.8rem; }
+          header .fondo .container [class^=col-] .justo span {
+            font-size: 5rem;
+            font-family: "Fjalla One";
+            line-height: 100px;
+            transition: .2s;
+            color: #111; }
+      header .fondo .container .gran-header {
+        height: 580px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #fff;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center; }
+        header .fondo .container .gran-header h1 {
+          font-size: 5em; }
+        header .fondo .container .gran-header span {
+          font-size: 1.4em;
+          text-transform: uppercase;
+          letter-spacing: 3px; }
+        header .fondo .container .gran-header img {
+          width: 80px;
+          margin-top: 1em;
+          transition: .5s;
+          cursor: pointer; }
+          header .fondo .container .gran-header img:hover {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg); }
+
+#servicios {
+  margin-top: 1rem;
+  background-color: #F2F8FF; }
+  #servicios h2 {
+    font-size: 3rem; }
+  #servicios .row {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    #servicios .row [class^="icon-"] {
+      font-size: 6.5em;
+      padding-bottom: 30px;
+      color: #0067F1; }
+    #servicios .row p {
+      font-size: 0.8rem; }
+
+#acerca .fondo1 {
+  position: relative; }
+  #acerca .fondo1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3800px;
+    height: 1400px;
+    background: #0067F1;
+    -webkit-transform: skewX(80deg);
+    -ms-transform: skewX(80deg);
+    transform: skewX(80deg); }
+
+#acerca .container {
+  position: relative;
+  z-index: 2; }
+  #acerca .container .row {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #acerca .container [class^="col-"] {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #acerca .container [class^="col-"] p {
+      font-size: 0.8rem;
+      font-weight: 200; }
+
+#portafolio .container {
+  position: relative; }
+  #portafolio .container .grid {
+    margin: 0 auto; }
+    #portafolio .container .grid .grid-item {
+      position: relative;
+      margin-bottom: 10px;
+      transition: .2s; }
+
+#plus {
+  position: relative; }
+  #plus::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    background: #005ad2;
+    top: 0;
+    right: 0;
+    transition: 1.8s;
+    z-index: 1;
+    opacity: 0; }
+  #plus:hover::after {
+    width: 100%;
+    transition: .8s;
+    opacity: 1; }
+  #plus .container-fluid {
+    background-color: #0067F1;
+    padding: 6rem;
+    background-position: center;
+    background-attachment: fixed; }
+    #plus .container-fluid .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      z-index: 2; }
+      #plus .container-fluid .row .logos {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        #plus .container-fluid .row .logos [class^="icon-"] {
+          font-size: 6.5em;
+          padding-bottom: 30px;
+          color: #111;
+          transition: .2s;
+          margin: 0 4rem; }
+          #plus .container-fluid .row .logos [class^="icon-"]:hover {
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8); }
+        #plus .container-fluid .row .logos a:hover {
+          text-decoration: none; }
+
+#contacto .container .row {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #contacto .container .row [class^="col-"] .form-group .form-control {
+    margin-bottom: 1rem;
+    color: #333; }
+  #contacto .container .row [class^="col-"] .form-group input.btn {
+    text-transform: uppercase;
+    border-radius: 0;
+    width: 30%;
+    background-color: #00C853;
+    border-color: #00C853; }
+    #contacto .container .row [class^="col-"] .form-group input.btn:active {
+      box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.2); }
+    #contacto .container .row [class^="col-"] .form-group input.btn:hover {
+      background-color: #00c351; }
+
+footer {
+  padding: 20px 0 5px 0;
+  background-color: #090909;
+  height: 50px;
+  color: #555; }
+  footer .row {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .row p {
+      margin: 0;
+      padding: 0; }
+      footer .row p b {
+        color: #0067F1; }
+
+#condicion {
+  display: none; }
+
+@media (min-width: 1024px) {
+  #acerca .container .row #a-m-1 {
+    margin-top: -10rem; } }
+
+@media (max-width: 992px) {
+  #acerca .fondo1, #acerca .fondo1::after {
+    display: none; }
+  #acerca .container .row h2 {
+    text-align: center; }
+  #acerca .container .row p {
+    color: black !important;
+    font-weight: normal !important;
+    text-align: justify; } }
+
+@media (max-width: 425px) {
+  #plus [class^="icon-"] {
+    margin: 0 1.5rem !important; }
+  footer .row {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
