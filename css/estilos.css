@@ -70,7 +70,7 @@ header {
           border: 4px solid #F2F8FF;
           border-radius: 2px;
           transition: .2s;
-          margin-bottom: .5rem; }
+          margin-bottom: .5em; }
         header .fondo .container [class^=col-] .justo {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -81,14 +81,14 @@ header {
           justify-content: center;
           margin: 0 auto; }
           header .fondo .container [class^=col-] .justo p {
-            font-size: 0.8rem;
+            font-size: 0.8em;
             color: #111;
             padding: 10px 15px 0 15px;
             text-align: left; }
             header .fondo .container [class^=col-] .justo p b {
-              font-size: 0.8rem; }
+              font-size: 0.8em; }
           header .fondo .container [class^=col-] .justo span {
-            font-size: 5rem;
+            font-size: 5em;
             font-family: "Fjalla One";
             line-height: 100px;
             transition: .2s;
@@ -290,3 +290,16 @@ footer {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around; } }
+
+@media (max-width: 375px) {
+  .gran-header {
+    font-size: 13px; }
+  .grid-item {
+    width: 345px !important;
+    height: auto; }
+    .grid-item img {
+      width: 100% !important; } }
+
+@media (max-width: 320px) {
+  .grid-item {
+    width: 290px !important; } }
