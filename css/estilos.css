@@ -86,7 +86,7 @@ header {
             padding: 10px 15px 0 15px;
             text-align: left; }
             header .fondo .container [class^=col-] .justo p b {
-              font-size: 0.8em; }
+              font-size: 1em; }
           header .fondo .container [class^=col-] .justo span {
             font-size: 5em;
             font-family: "Fjalla One";
@@ -178,24 +178,14 @@ header {
       position: relative;
       margin-bottom: 10px;
       transition: .2s; }
+      #portafolio .container .grid .grid-item:not(:hover) img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
+      #portafolio .container .grid .grid-item img {
+        transition: .3s; }
 
 #plus {
   position: relative; }
-  #plus::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0px;
-    background: #005ad2;
-    top: 0;
-    right: 0;
-    transition: 1.8s;
-    z-index: 1;
-    opacity: 0; }
-  #plus:hover::after {
-    width: 100%;
-    transition: .8s;
-    opacity: 1; }
   #plus .container-fluid {
     background-color: #0067F1;
     padding: 6rem;
@@ -269,7 +259,11 @@ footer {
 #condicion {
   display: none; }
 
-@media (min-width: 1024px) {
+.grid-item img {
+  width: 360px;
+  height: auto; }
+
+@media (max-width: 1440px) {
   #acerca .container .row #a-m-1 {
     margin-top: -10rem; } }
 
@@ -281,7 +275,18 @@ footer {
   #acerca .container .row p {
     color: black !important;
     font-weight: normal !important;
-    text-align: justify; } }
+    text-align: justify; }
+  #acerca .container .row #a-m-1 {
+    margin-top: 0rem; }
+  #portafolio .container .grid .grid-item img {
+    -webkit-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important; } }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1024px;
+    margin: 30px auto;
+    padding: 0 20px; } }
 
 @media (max-width: 425px) {
   #plus [class^="icon-"] {
@@ -303,3 +308,18 @@ footer {
 @media (max-width: 320px) {
   .grid-item {
     width: 290px !important; } }
+
+.cerrar {
+  color: #fff;
+  background: #f00;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 100%;
+  line-height: 20px; }
+
+button.close:focus {
+  outline-color: transparent; }
+
+.modal-body {
+  font-weight: 200; }
